@@ -37,16 +37,23 @@ Google Generative AI: Intended readers: This work will be useful for generating 
 OpenWeatherMap API: For firing query commands to get the weather of a particular location.
 
 5. index.js (As per assumed functionality)
-This file is expected to contain JavaScript code that handles:
-API interactions: Calling to the OpenWeatherMap API, and refreshing the widgets and charts related to weather.
-Event handling: Interacting with the users for instance through clicks of the search button and interaction through a chatbot.
-Data rendering: Interacting with the chatbot, and dynamically altering the DOM with Weather data.
-Setup Instructions:
-Clone the repository.
-Install necessary dependencies:
-Chart.js (which serves as a library for drawing charts.)
-Make sure that you have the keys from the OpenWeatherMap API and Google Generative AI API.
-Run the project: The website weather dashboard can be viewed by opening the index.html file and for the chatbot interface use index2.html.
+This file contains the JavaScript functionality for the Weather Dashboard, which includes:
+Fetching current weather data: Employing OpenWeatherMap API it is able to obtain and show current temperature, humidity, wind, and weather conditions in real time.
+Fetching 5-day weather forecast: It also retrieves forecast data and presents it in a paginated table format.
+Updating the weather widget: The data from the API is then plugged into the DOM through manipulation of Variables to display the temperature, weather description and weather icons.
+Pagination controls: Enables users to move from one page to the other in the forecast table.
+Chart generation: Three charts are made using Chart.js:
+Temperature Bar Chart: The forecast for the next few days with an emphasis of the temperatures.
+Weather Condition Doughnut Chart: Illustrates the severity of the weather, viz., rain, clear, clouds etc.
+Temperature Line Chart: Illustrates the relationship of temperature with time.
+External dependencies:
+OpenWeatherMap API: Weather data is important in aviation and hence requires real time and forecasted data, which is obtained from the URLs mentioned below.
+Chart.js: They include the following functions For creating charts on the basis of the forecast data.
+
+Run the project:
+Open index.html in a web browser to view the weather dashboard, and index2.html for the chatbot interface.
+If i only run index.html even then i can have the index2.html in that as well.
+
 APIs and External Libraries:
 OpenWeatherMap API: Used for the retrieval of real time weather data.
 Google Generative AI (Gemini): Loaded in the chatbot to deal with natural language queries.
