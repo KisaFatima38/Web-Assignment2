@@ -50,11 +50,11 @@ External dependencies:
 OpenWeatherMap API: Weather data is important in aviation and hence requires real time and forecasted data, which is obtained from the URLs mentioned below.
 Chart.js: They include the following functions For creating charts on the basis of the forecast data.
 
-Run the project:
+**Run the project:**
 Open index.html in a web browser to view the weather dashboard, and index2.html for the chatbot interface.
 If i only run index.html even then i can have the index2.html in that as well.
 
-APIs and External Libraries:
+**APIs and External Libraries:**
 OpenWeatherMap API: Used for the retrieval of real time weather data.
 Google Generative AI (Gemini): Loaded in the chatbot to deal with natural language queries.
 Chart.js: This includes temperature and condition charts which are display tools mostly used in the telecommunication industry.
