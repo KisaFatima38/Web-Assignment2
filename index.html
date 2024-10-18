@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <aside class="side-menu">
+        <div class="background-image">
+        <div class="logo">Weather Dashboard</div>
+        <nav>
+          <ul>
+            <li><a href="#" class="active">Dashboard</a></li>
+            <li><a href="index2.html" class="active">Chatbot</a></li>
+          </ul>
+        </nav>
+      </div>
+      </aside>
+      <main>
+        <div class="search-container">
+          <input type="text" id="cityInput" placeholder="Enter city name" />
+          <button id="searchBtn">Get Weather</button>
+        </div>
+        <div id="weatherWidget" class="weather-widget">
+          <h2 id="cityName"></h2>
+          <p id="temperature"></p>
+          <p id="description"></p>
+          <img id="weatherIcon" src="" alt="" /> 
+          <p id="humidity"></p>
+          <p id="windSpeed"></p>
+        </div>
+        <div class="charts-container">
+          <div class="chart">
+            <h3>Temperature Forecast</h3>
+            <canvas id="tempChart"></canvas>
+          </div>
+          <div class="chart">
+            <h3>Weather Conditions</h3>
+            <canvas id="conditionChart"></canvas>
+          </div>
+          <div class="chart">
+            <h3>Temperature Trend</h3>
+            <canvas id="tempLineChart"></canvas>
+          </div>
+        </div>
+        <section id="section">
+          <div class="table-container">
+            <h3>5-Day Forecast</h3>
+            <table id="forecastTable">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Temperature</th>
+                  <th>Condition</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <div class="pagination">
+              <button id="prevPage">Previous</button>
+              <span id="currentPage">1</span>
+              <button id="nextPage">Next</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
